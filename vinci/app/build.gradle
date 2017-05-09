@@ -27,4 +27,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.1.0'
     testCompile 'junit:junit:4.12'
     compile project(':lib_vinci')
+    //remote dependency
+//    compile 'com.github.clycheng2015:vinci:vinci_lib'
 }

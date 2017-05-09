@@ -23,7 +23,7 @@
 
 如何创建自己的Github代码仓库并可以被其他人作为库引用
 
-1、新建一个工程获取new Module
+1、新建一个工程获取new Module或在当前工程new libiary module，然后提交新的代码到远程
 
 2、在VCS---inport into version contorl---share project on Gitbub，填上仓库名称，点击share
 
@@ -34,5 +34,15 @@
 5、接下来需要登录到JitPack.io网站，输入项目地址，点击get it。
 
 6、如果是Maven引用，则在根目录下配置：https://jitpack.io,如果是Gradle,则compile '仓库的完整地址：'
+gradle:
+step1: Add it in your root build.gradle at the end of repositories:
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+step2:Add the dependency
+compile 'com.github.clycheng2015:vinci:vinci_lib'
 
-示例参考：https://jitpack.io/#clycheng2015/GithubUpload/v1.0，这里有详细的说明。
+示例参考：https://jitpack.io/#clycheng2015/vinci/vinci_lib，这里有详细的说明。
