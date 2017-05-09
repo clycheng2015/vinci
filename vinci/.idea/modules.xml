@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_vinci/lib_vinci.iml" filepath="$PROJECT_DIR$/lib_vinci/lib_vinci.iml" />
       <module fileurl="file://$PROJECT_DIR$/vinci.iml" filepath="$PROJECT_DIR$/vinci.iml" />
     </modules>
   </component>

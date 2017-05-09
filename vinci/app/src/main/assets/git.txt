@@ -1,0 +1,38 @@
+如何创建自己的Github代码仓库
+
+1、注册并登录自己的Github账号。
+
+2、进入Repositories，点击右侧“new”，输入一个仓库名称，创建当前仓库，创建后仓库后，就有对应的仓库地址。
+
+3、新建一个本地工程，在顶部"VCS"--->import into version contorl-->Create Git Repository
+跳转到当前本地代码工程的根目录，选择ok。
+
+4、进入本地工程的根目录，右键Git bash--->git remote add origin https://github.com/[username]/[project_name].git,
+例如本次工程：https://github.com/clycheng2015/vinci.git
+
+5、返回Android Studio，邮件单击你的项目根目录，并选择Git > Add，将会添加你所有的项目文件到你的Git repository
+
+6、再次右击项目名称，并且这一次选择Git > Commit Directory。在下一页中，输入Commit Message并且选择“Commit”。
+
+注意：
+报错一：如果此时出现提交失败---Failed to connect to github.com port 443: Timed out类似错误，
+可以代开代理并在Git Bash中，输入:git config --gloabl http.proxy 127.0.0.1:1080(本机代理地址及端口)，
+
+报错二：Push to origin/master was rejected，则在上面Git bash：输入：git push -f origin master(强制提交)
+
+
+如何创建自己的Github代码仓库并可以被其他人作为库引用
+
+1、新建一个工程获取new Module
+
+2、在VCS---inport into version contorl---share project on Gitbub，填上仓库名称，点击share
+
+3、选择要加入到库中 的文件
+
+4、登录Github，找到 release,创建一个release,选择publish release
+
+5、接下来需要登录到JitPack.io网站，输入项目地址，点击get it。
+
+6、如果是Maven引用，则在根目录下配置：https://jitpack.io,如果是Gradle,则compile '仓库的完整地址：'
+
+示例参考：https://jitpack.io/#clycheng2015/GithubUpload/v1.0，这里有详细的说明。
