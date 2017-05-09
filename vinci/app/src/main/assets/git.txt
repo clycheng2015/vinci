@@ -29,7 +29,7 @@
 
 3、选择要加入到库中 的文件
 
-4、登录Github，找到 release,创建一个release,选择publish release
+4、登录Github，找到 release,创建一个release,其名称应该是版本号之类的，然后选择publish release,
 
 5、接下来需要登录到JitPack.io网站，输入项目地址，点击get it。
 
@@ -43,6 +43,6 @@ step1: Add it in your root build.gradle at the end of repositories:
 		}
 	}
 step2:Add the dependency
-compile 'com.github.clycheng2015:vinci:vinci_lib'
+compile 'com.github.clycheng2015:vinci:1.0.0'
 
-示例参考：https://jitpack.io/#clycheng2015/vinci/vinci_lib，这里有详细的说明。
+示例参考：https://jitpack.io/#clycheng2015/vinci/1.0.0，这里有详细的说明。

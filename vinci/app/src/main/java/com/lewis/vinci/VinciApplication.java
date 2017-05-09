@@ -5,6 +5,7 @@ import android.app.Application;
 import com.lewis.lib_vinci.service.network.NetStateReceiver;
 import com.lewis.lib_vinci.utils.AppUtils;
 
+
 /**
  * 项目名称：vinci
  * 类描述：程序入口配置
@@ -15,7 +16,7 @@ import com.lewis.lib_vinci.utils.AppUtils;
  * @version ${1.0}
  */
 
-
+//测试分支修改
 public class VinciApplication extends Application {
     @Override
     public void onCreate() {
@@ -24,8 +25,6 @@ public class VinciApplication extends Application {
         configGlobleDebug();
         //初始化监听网络广播
         initNetWorkListen();
-
-
     }
 
     /**
