@@ -3,3 +3,4 @@
 1、在github上操作：http://blog.csdn.net/yuhk231/article/details/54926281
 
 2、在As上操作：http://blog.csdn.net/u010937230/article/details/54601383
+（本地的合并，可以在AS中完成，远程的合并操作，还是必须到Github上执行new pull request）
