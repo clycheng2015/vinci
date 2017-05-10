@@ -18,7 +18,7 @@
 报错一：如果此时出现提交失败---Failed to connect to github.com port 443: Timed out类似错误，
 可以代开代理并在Git Bash中，输入:git config --gloabl http.proxy 127.0.0.1:1080(本机代理地址及端口)，
 
-报错二：Push to origin/master was rejected，则在上面Git bash：输入：git push -f origin master(强制提交)
+报错二：Push to origin/master was rejected，则在工程根目录上面Git bash：输入：git push -f origin master(强制提交)
 
 
 如何创建自己的Github代码仓库并可以被其他人作为库引用
