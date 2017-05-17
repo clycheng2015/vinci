@@ -4,3 +4,7 @@
 
 2、在As上操作：http://blog.csdn.net/u010937230/article/details/54601383
 （本地的合并，可以在AS中完成，远程的合并操作，还是必须到Github上执行new pull request）
+在AS 的dev做了修改后，可以在AS中进行分支切换并执行本地merge到master，
+但是，在remote branch中执行合并操作，没有效果，回到github查看远程仓库master，
+会发现，始终没有更新到最新的修改，此时还是需要手动切换到“master”，
+并点击“new pull request”进行远程合并。
