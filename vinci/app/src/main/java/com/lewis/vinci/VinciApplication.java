@@ -9,7 +9,7 @@ import com.lewis.lib_vinci.utils.AppUtils;
 /**
  * 项目名称：vinci
  * 类描述：程序入口配置
- *
+ * <p>
  * 创建人：Administrator
  * 创建时间：2017-05-09
  *
@@ -21,6 +21,7 @@ public class VinciApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        AppUtils.initContext(this);
         //配置全局（尤其是lib module）中的全局调试开关
         configGlobleDebug();
         //初始化监听网络广播
