@@ -13,8 +13,8 @@ import android.content.SharedPreferences;
  * @since 2014/3/26
  *
  */
-public final class SharedPreferencesUtils {
-    private SharedPreferencesUtils() {
+public final class SpUtils {
+    private SpUtils() {
         
     }
     /**

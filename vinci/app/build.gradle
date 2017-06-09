@@ -29,4 +29,10 @@ dependencies {
     compile project(':lib_vinci')
     //remote dependency
 //    compile 'com.github.clycheng2015:vinci:1.0.0'
+
+    /* 图片加载 Glide */
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    /* View注解 ButterKnife */
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
 }

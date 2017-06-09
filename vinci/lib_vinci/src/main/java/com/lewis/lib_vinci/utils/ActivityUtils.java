@@ -8,13 +8,13 @@ import android.content.Context;
  * @author lewis
  * @since 2015-9-27
  */
-public final class CredooUtils {
+public final class ActivityUtils {
 	
 	private static int mOpenEnter;
 	private static int mOpenExit;
 	private static int mCloseEnter;
 	private static int mCloseExit;
-	private CredooUtils() {
+	private ActivityUtils() {
 	    
 	}
 	

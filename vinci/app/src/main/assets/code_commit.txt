@@ -8,3 +8,6 @@
 但是，在remote branch中执行合并操作，没有效果，回到github查看远程仓库master，
 会发现，始终没有更新到最新的修改，此时还是需要手动切换到“master”，
 并点击“new pull request”进行远程合并。
+
+注意：一般，新提交在dev分支的代码，当登录到Github上，切换到master分支时，会有对应的提醒，
+让你去合并代码到master分支

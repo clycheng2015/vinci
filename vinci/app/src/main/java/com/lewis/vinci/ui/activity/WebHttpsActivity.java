@@ -1,4 +1,4 @@
-package com.lewis.vinci;
+package com.lewis.vinci.ui.activity;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.lewis.lib_vinci.coreframe.https.webview.LoadedListener;
 import com.lewis.lib_vinci.coreframe.https.webview.SslPinningWebViewClient;
+import com.lewis.vinci.R;
 
 import java.io.IOException;
 

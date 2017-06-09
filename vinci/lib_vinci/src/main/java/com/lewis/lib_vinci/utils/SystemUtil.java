@@ -237,7 +237,7 @@ public class SystemUtil {
      * @return
      */
     private static String makeImei(Context con) {
-        String imei = (String) SharedPreferencesUtils.getParam(con, PREFERENCES_NAME, IMEI, "");
+        String imei = (String) SpUtils.getParam(con, PREFERENCES_NAME, IMEI, "");
 
         if (TextUtils.isEmpty(imei)) {
             StringBuffer sb = new StringBuffer();
@@ -263,7 +263,7 @@ public class SystemUtil {
             for (int j = sb.length(); j < 15; j++) {
                 sb.append((char) (r.nextInt(10) | 0x30));
             }
-            SharedPreferencesUtils.setParam(con, PREFERENCES_NAME, IMEI, sb.toString());
+            SpUtils.setParam(con, PREFERENCES_NAME, IMEI, sb.toString());
             return sb.toString();
         } else {
             if (LibConstants.DEBUG) {
