@@ -15,4 +15,34 @@
         android:text="CameraActivity"
         android:textAllCaps="false"
         android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PrintTextView"
+        android:textAllCaps="false"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Popwindow"
+        android:textAllCaps="false"
+        android:textSize="20sp"/>
+
+    <com.lewis.vinci.ui.widget.FadeInTextView
+        android:id="@+id/tv_printtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:maxLines="10"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="测试使用 tools:text实现预览效果"/>
 </LinearLayout>

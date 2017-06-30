@@ -7,13 +7,10 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
-import android.provider.MediaStore;
 import android.support.v4.content.FileProvider;
+import android.util.Log;
 
 import java.io.File;
-
-import static com.lewis.lib_vinci.utils.CameraUtils.CODE_TAKE_PHOTO_ZOOM;
-import static com.lewis.lib_vinci.utils.CameraUtils.takePhotoUri;
 
 /**
  * Created by honjane on 2016/9/11.
@@ -52,6 +49,24 @@ public class FileUtils {
         return mFileDir;
     }
 
+    public static File createPhotoName() {
+        String mFilePath = FileUtils.getFileDir() + File.separator;
+        if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
+            File path = new File(mFilePath);
+            if (!path.exists()) {
+                path.mkdirs();
+            }
+            String mFileName = System.currentTimeMillis() + ".jpg";
+            File fileName = new File(path, mFileName);
+            if (fileName.exists()) {
+                fileName.delete();
+            }
+            return fileName;
+        } else {
+            Log.e("main", "sdcard not exists");
+            return null;
+        }
+    }
 
     public static String getRootPath() {
         if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {
@@ -84,47 +99,6 @@ public class FileUtils {
         }
         context.startActivity(intent);
     }
-
-    /**
-     * 打开相机
-     * 兼容7.0
-     *
-     * @param activity    Activity
-     * @param file        File
-     * @param requestCode result requestCode
-     */
-    public static void startActionCapture(Activity activity, File file, int requestCode) {
-        if (activity == null) {
-            return;
-        }
-        takePhotoUri = getUriForFile(activity, file);
-        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        intent.putExtra(MediaStore.EXTRA_OUTPUT, getUriForFile(activity, file));
-        activity.startActivityForResult(intent, requestCode);
-    }
-
-    /**
-     * 相机拍照裁剪
-     *
-     * @param activity
-     */
-    public static void takePhotoZoom(Activity activity) {
-        if (null != takePhotoUri) {
-            Intent intent = new Intent("com.android.camera.action.CROP");
-            intent.setDataAndType(takePhotoUri, "image/*");
-            intent.putExtra("crop", "true");
-            intent.putExtra("aspectX", 1);
-            intent.putExtra("aspectY", 1);
-            intent.putExtra("outputX", 200);
-            intent.putExtra("outputY", 200);
-            intent.putExtra("scale", true);
-            intent.putExtra(MediaStore.EXTRA_OUTPUT, takePhotoUri);
-            intent.putExtra("return-data", false);
-            intent.putExtra("noFaceDetection", true);
-            activity.startActivityForResult(intent, CODE_TAKE_PHOTO_ZOOM);
-        }
-    }
-
 
     public static Uri getUriForFile(Context context, File file) {
         if (context == null || file == null) {

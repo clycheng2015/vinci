@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/button1"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/text_yellow_color"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="button下方弹窗"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/button2"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#C79EFE"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="button上方弹窗"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/button3"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#74D6AF"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="pop菜单弹窗"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/button4"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#E38A7C"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="pop ListView列表"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/button5"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#50A7B2"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="弹出pop背景变暗"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/button6"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#DD7D55"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="添加Enter、Exist动画"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/button7"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#DD7D55"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="测试showAtLocation"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="visible"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seek_bar"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="改变当前window亮度:"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:visibility="gone"
+        />
+</RelativeLayout>
