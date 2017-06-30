@@ -40,6 +40,7 @@
 
         <activity android:name=".ui.activity.WebHttpsActivity"/>
         <activity android:name=".ui.activity.CameraActivity"/>
+        <activity android:name=".ui.activity.PopWindowActivity"/>
     </application>
 
 </manifest>
