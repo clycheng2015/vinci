@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/notes/RN开发散记.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/notes/adb指令.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/notes/adb指令.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/notes/dagger2.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/notes/dagger2.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/notes/rn开源项目上传到NPM.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/notes/v5.0代码.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/notes/代码提交开发操作.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/notes/接活网站.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/notes/混合开发笔记.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/notes/纯RN操作指南.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/notes/镜像修改.txt" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
