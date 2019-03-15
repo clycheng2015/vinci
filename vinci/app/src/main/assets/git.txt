@@ -10,7 +10,7 @@
 4、进入本地工程的根目录，右键Git bash--->git remote add origin https://github.com/[username]/[project_name].git,
 例如本次工程：https://github.com/clycheng2015/vinci.git
 
-5、返回Android Studio，邮件单击你的项目根目录，并选择Git > Add，将会添加你所有的项目文件到你的Git repository
+5、返回Android Studio，右键单击你的项目根目录，并选择Git > Add，将会添加你所有的项目文件到你的Git repository
 
 6、再次右击项目名称，并且这一次选择Git > Commit Directory。在下一页中，输入Commit Message并且选择“Commit”。
 
